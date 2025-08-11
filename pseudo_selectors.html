@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        h1{
+            color: blueviolet;
+        }
+        h1:hover{
+            color: rgb(92, 72, 163);
+            font-size: 60px;
+            font-size: inherit;
+            text-shadow: 5px 6px black;
+
+        }
+        img{
+            border: 3px solid brown;
+            width: 200px;
+            height: 150px;
+        }
+        img:hover{
+            border: 3px double palevioletred;
+            box-shadow: 3px 4px 6px red;
+        }
+        input:focus{
+            background-color: yellow;
+            color: black;
+        }
+        a:visited{
+            color: rgb(214, 13, 33);
+        }
+        h2:active{
+            color: aqua;
+            text-transform: lowercase;
+          background-color: red;
+        }
+        p::first-letter{
+            color: blueviolet;
+            font-size: 60px;
+        
+        }
+        p::first-line{
+            color: goldenrod;
+        }
+        p::selection{
+            color:violet ;
+            background-color: yellow;
+        }
+        ::selection{
+              color:violet ;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <p>What is Artificial Intelligence (AI) and Why People Should ...Artificial
+			intelligence (AI) refers to the capability of computer systems to perform
+			tasks that typically require human intelligence. These tasks include
+			learning, reasoning, problem-solving, perception, and decision-making. AI
+			encompasses a broad range of technologies and techniques used to build
+			machines that can mimic human cognitive functions and solve complex
+			problems.</p>
+            <p>What is Artificial Intelligence (AI) and Why People Should ...Artificial
+			intelligence (AI) refers to the capability of computer systems to perform
+			tasks that typically require human intelligence. These tasks include
+			learning, reasoning, problem-solving, perception, and decision-making. AI
+			encompasses a broad range of technologies and techniques used to build
+			machines that can mimic human cognitive functions and solve complex
+			problems</p>
+    <h2> Hello pune </h2>
+    <input type="text" placeholder="name"/>
+
+    <a href="https://pixabay.com/"> Click me </a>
+    <br>
+    <a href="https://www.youtube.com/">Show</a>
+    <h1>Hello ppl!</h1>
+    <br>
+    <img src="image/img1.png"/>
+</body>
+</html>

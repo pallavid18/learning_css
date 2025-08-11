@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Gallery</title>
+        <style>
+      .flex-items img {
+        background-color: aqua;
+        margin: 10px;
+        width: 300px;
+        height: 250px;
+        color: black;
+        text-align: center;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img:hover{
+            background-color: blue;
+            border: 5px solid greenyellow;
+            box-shadow: 3px 4px 6px red;
+      }
+      .Flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*space-evenly,space-around,space-between*/
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+      }
+    </style>
+    </head>
+    <body>
+        <ul class="Flex-container">
+            <li class="flex-items">
+                <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg"/>
+            </li>
+            <li class="flex-items">
+                <img src="https://media.istockphoto.com/id/2151251610/photo/cropped-image-of-hand-holding-white-flower-with-pillar-rocks-in-background-at-kodaikanal.jpg?s=2048x2048&w=is&k=20&c=f_ufob1ZTd705W5wFbla9rZXmFKWmt_odBFQa5Flzaw="/>
+            </li>
+            <li class="flex-items">
+                <img src="https://cdn.pixabay.com/photo/2014/03/26/17/50/sunset-298850_1280.jpg" />
+            </li>
+            <li class="flex-items">
+                <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg" />
+            </li>
+            <li class="flex-items">
+                <img src="https://cdn.pixabay.com/photo/2020/11/09/15/12/trail-5726987_1280.jpg" />
+            </li>
+            <li class="flex-items">
+                <img src="image/img2.jpg" />
+            </li>
+               <li class="flex-items">
+                <img src="https://cdn.pixabay.com/photo/2018/01/21/01/17/waters-3095682_1280.jpg" />
+            </li>
+               <li class="flex-items">
+                <img src="https://cdn.pixabay.com/photo/2021/05/29/03/00/beach-6292382_1280.jpg" />
+            </li>
+               <li class="flex-items">
+                <img src="https://cdn.pixabay.com/photo/2019/10/31/09/20/beach-4591457_1280.jpg" />
+            </li>
+        </ul>
+    </body>
+</html>
