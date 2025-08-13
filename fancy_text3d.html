@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D FancyText</title>
+    <style>
+        .text-container{
+            display: flex;
+            justify-content: center;
+            letter-spacing: 4px;
+            font-weight: 900;
+            font-size: 70px;
+            perspective: 100px;
+        }
+        .text-container > b{
+            height:80px ;
+            box-shadow: 0px 5px 8px gray;
+            background:linear-gradient(to right, blueviolet,cyan, royalblue,red);
+            background-clip: text;
+            color: transparent;
+            transform-origin: bottom;
+            transform: rotateX(-65deg);
+            animation: getUp 10s infinite;
+
+        }
+        .text-container > b:nth-child(1){
+            animation-delay: 0s;
+        }
+         .text-container > b:nth-child(2){
+            animation-delay: 0.1s;
+        }
+         .text-container > b:nth-child(3){
+            animation-delay: 0.2s;
+        }
+         .text-container > b:nth-child(4){
+            animation-delay: 0.3s;
+        }
+         .text-container > b:nth-child(5){
+            animation-delay: 0.4s;
+        }
+         .text-container > b:nth-child(6){
+            animation-delay: 0.5s;
+        }
+         .text-container > b:nth-child(7){
+            animation-delay: 0.6s;
+        }
+
+        @keyframes getUp{
+            from{transform: rotateX(-65deg);}
+            10%,50%{transform: rotate(-0);}
+            60%,to{transform: rotateX(-65deg);}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <b>P</b> <b>A</b> <b>L</b> <b>L</b> <b>A</b> <b>V</b> <b>I</b>
+
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card flip</title>
+    <style>
+        .c_container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .box{
+             background-color: cornflowerblue;
+            border: 3px solid black;
+            height: 200px;
+            width:200px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            transition: transform 5s ;
+            text-align: center;
+        }
+        .c_card1:hover{
+            transform: rotateY(90deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="c_container">
+        <div class="box c_card1">Helllo</div>
+        <div class="box c_card2">How are u </div>
+        <div class="box c_card3">How was ur day</div>
+        <div class="box c_card4">Good Day</div>
+    </div>
+</body>
+</html>
