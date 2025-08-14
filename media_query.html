@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+        /*Mobile view*/
+      @media (min-width: 320px) and (max-width: 767px) {
+        body {
+          font-size: 20px;
+          background-color: aqua;
+        }
+        p {
+          display: none;
+        }
+        h1,h3 {
+          color: black;
+          text-shadow: 2px 2px 4px white;
+        }
+        .img1 {
+          display: none;
+        }
+      }
+      /*from 1024px and up*/
+      @media(min-width:1024px){
+        body{
+            background-color: lightblue;
+            font-size: 20px;
+        }
+        .img1{
+            width: 800px;
+            height: 600px;
+            border: 30px 40px 30px 40px solid black;
+        }
+      }
+      /*from 850px and up,untill 950px*/
+      @media(min-width:850px) and (max-width:950px){
+        body{
+            background-color: lightpink;
+        }
+        h1,h3{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        .img1{
+            border-image: auto;
+            width: 400px;
+            height: 300px;
+            border-radius: 20px 30px 20px 30px;
+            border: 5px solid black;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi
+      facilis quibusdam! Dolores reprehenderit pariatur id doloribus excepturi
+      incidunt dolore nobis nam? Fugiat aperiam tenetur provident neque ea
+      beatae nisi!
+    </p>
+    <h1>CSS Media Query</h1>
+    <p>
+      The application of technology and artificial intelligence (AI) in
+      healthcare has the potential to address some of these supply-and-demand
+      challenges. The increasing availability of multi-modal data (genomics,
+      economic, demographic, clinical and phenotypic) coupled with technology
+      innovations in mobile, internet of things (IoT), computing power and data
+      security herald a moment of convergence between healthcare and technology
+      to fundamentally transform models of healthcare delivery through
+      AI-augmented healthcare systems
+    </p>
+
+    <p>The background will change according to viewport width change</p>
+    <br /><br />
+    <img class="img1" src="image/img5.jpg" alt="Image5" />
+
+    <h3>Smartphones - <span class="details">from 320px and up</span>(min)</h3>
+  </body>
+</html>

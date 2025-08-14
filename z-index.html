@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .z-container{
+            position: relative;
+            margin: 50px;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            border-radius: 120px;
+            position: absolute;
+            color: burlywood;
+            text-align: center;
+            font-size: 30px;
+            border: 3px solid white
+            ;
+        }
+        .blue{
+            background-color: blue;
+            left: 60px;
+            z-index: 1;
+        }
+        .green{
+            background-color: green;
+            left: 120px;
+            z-index: 2;
+    
+        }
+        .green:hover{
+            background-color: greenyellow;
+            left: 120px;
+            z-index: 7;
+    
+        }
+        .red{
+            background-color: red;
+            left: 180px;
+            z-index: 3;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="z-container">
+        <div class="blue">Blue</div>
+        <div class="green">Green</div>
+        <div class="red">Red</div>
+    </div>
+    
+</body>
+</html>
