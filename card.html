@@ -5,36 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card flip</title>
     <style>
-        .c_container{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 50px;
-        }
-        .box{
-            background-color: cornflowerblue;
-            border: 3px solid black;
-            height: 200px;
-            width:200px;
-            color: black;
+        body {
+            font-family: cursive;
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
-            transition: transform 5s ;
-            text-align: center;
+            height: 100vh;
+            margin: 10px;
         }
-        .c_card1:hover{
-            transform: rotateY(90deg);
+        .car-row {
+            display: flex;
+            gap: 90px;
         }
-
+        .card-container {
+            perspective: 1000px;
+        }
+        .card {
+            width: 200px;
+            height: 300px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card-side {
+            position: absolute;
+            width: 300PX;
+            height: 150PX;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: black;
+            border-radius: 3px solid black;
+            border: 3px solid black;
+        }
+        .card-front {
+            background-color: aqua; 
+        }
+        .card-back {
+            background-color: blueviolet; 
+            transform: rotateY(180deg);
+        }
     </style>
 </head>
 <body>
-    <div class="c_container">
-        <div class="box c_card1">Helllo</div>
-        <div class="box c_card2">How are u </div>
-        <div class="box c_card3">How was ur day</div>
-        <div class="box c_card4">Good Day</div>
+   <div class="car-row">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-side card-front">HELLO</div>
+            <div class="card-side card-back">WORLD</div>
+        </div>
     </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-side card-front">I'M</div>
+            <div class="card-side card-back">EARTH</div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-side card-front">WELCOME TO</div>
+            <div class="card-side card-back">MY PLACE OF PEACE</div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-side card-front">GOODBYE </div>
+            <div class="card-side card-back">EVERYONE</div>
+        </div>
+    </div>
+   </div>
 </body>
 </html>
